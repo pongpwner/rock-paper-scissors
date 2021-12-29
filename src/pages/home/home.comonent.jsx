@@ -1,11 +1,13 @@
 import React from "react";
-import './home.styles.scss';
+import "./home.styles.scss";
+import Selection from "../../components/selection/selection.component";
 
-const Home =()=>{
+const Home = () => {
+  return (
+    <div className="home">
+      <Selection />
+    </div>
+  );
+};
 
-    return(<div className='home'>
-
-    </div>)
-}
-
-export default Home
+export default Home;

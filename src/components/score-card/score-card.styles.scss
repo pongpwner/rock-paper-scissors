@@ -1,0 +1,24 @@
+.score-card {
+  border: 4px solid hsl(217, 16%, 45%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 75%;
+  align-items: center;
+  margin: 5% 0;
+
+  ul {
+    margin: 0;
+    padding: 5%;
+    margin-left: 1rem;
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+  }
+}

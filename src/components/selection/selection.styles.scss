@@ -1,0 +1,26 @@
+.selection {
+  display: flex;
+  justify-content: center;
+  .options {
+    background-image: url(../../assets/images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .row1,
+    .row2 {
+      display: flex;
+    }
+
+    .row1 {
+      justify-content: space-between;
+    }
+    .row2 {
+      justify-content: center;
+    }
+  }
+}
