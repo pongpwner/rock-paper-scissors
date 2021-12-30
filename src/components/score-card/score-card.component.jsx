@@ -3,7 +3,7 @@ import React from "react";
 import Score from "../score/score.component";
 import "./score-card.styles.scss";
 
-const ScoreCard = () => {
+const ScoreCard = ({ score }) => {
   return (
     <div className="score-card">
       <ul>
@@ -11,7 +11,7 @@ const ScoreCard = () => {
         <li>Paper</li>
         <li>Scissors</li>
       </ul>
-      <Score />
+      <Score score={score} />
     </div>
   );
 };
