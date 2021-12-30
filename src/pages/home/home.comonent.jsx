@@ -21,14 +21,16 @@ const Home = ({
   return (
     <div className="home">
       {playerChoice ? (
-        <div>
+        <div className="battle-screen">
           <Battle playerChoice={playerChoice} cpuChoice={cpuChoice} />
           {result ? (
             <div className="result">
-              <div className="result-label">You {result} </div>
+              <div className="result-label">YOU {result.toUpperCase()}</div>
               <CustomButton name="Play Again" handleClick={playAgain} />
             </div>
-          ) : null}
+          ) : (
+            <div className="filler" />
+          )}
         </div>
       ) : (
         <Selection rpsStart={rpsStart} />

@@ -1,14 +1,32 @@
 .home {
   background-color: hsl(214, 47%, 23%);
-  .result {
+  height: 40vh;
+  .battle-screen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .result-label {
-      font-size: 2rem;
-      font-weight: 600;
-      color: white;
+    gap: 4rem;
+    .result {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .result-label {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: white;
+      }
+      button {
+        background-color: white;
+        color: hsl(214, 47%, 23%);
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+    .filler {
+      height: 3rem;
     }
   }
 }
