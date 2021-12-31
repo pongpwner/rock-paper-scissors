@@ -5,6 +5,7 @@
   .battle-screen {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 3rem;
     .result {
       display: flex;
@@ -18,12 +19,15 @@
         font-weight: 700;
         color: white;
       }
-      button {
+      .custom-button {
         background-color: white;
         color: hsl(214, 47%, 23%);
-        width: 100%;
+        min-width: 100%;
         font-size: 1.5rem;
         font-weight: 600;
+        &:hover {
+          color: hsl(349, 71%, 52%);
+        }
       }
     }
     .filler {

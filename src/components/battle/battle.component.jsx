@@ -43,12 +43,12 @@ const Battle = ({ playerChoice, cpuChoice }) => {
     <div className="battle">
       <div className="player ">
         {playerChoiceImage}
-        <span>you picked</span>
+        <span>YOU PICKED</span>
       </div>
 
       <div className="cpu">
         {cpuChoice ? cpuChoiceImage : <div className="empty"></div>}
-        <span>the house picked</span>
+        <span>THE HOUSE PICKED</span>
       </div>
     </div>
   );

@@ -20,6 +20,11 @@
     .row1,
     .row2 {
       display: flex;
+      .image-cropper {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
 
     .row1 {

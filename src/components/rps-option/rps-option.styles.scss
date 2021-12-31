@@ -29,3 +29,10 @@
 .rock {
   border: 15px solid hsl(349, 71%, 52%);
 }
+.paper,
+.rock,
+.scissors {
+  @media (min-width: 1200px) {
+    border-width: 25px;
+  }
+}

@@ -4,6 +4,9 @@
   padding: 0.5rem 2rem;
   color: white;
   background-color: hsl(214, 47%, 23%);
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: 800px) {
     max-width: 150px;
     padding: 1rem;
