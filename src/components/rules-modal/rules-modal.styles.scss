@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  height: 100vh;
 
   .background {
     display: none;
@@ -10,7 +11,7 @@
 
   .rules-modal {
     display: none;
-    top: 0;
+
     height: 100vh;
     width: 100vw;
     flex-direction: column;
@@ -21,9 +22,13 @@
     align-items: center;
 
     @media (min-width: 800px) {
-      top: calc(50vh - 225px);
-      height: 450px;
-      width: 450px;
+      position: absolute;
+
+      top: calc(50vh - 200px);
+      left: calc(50vw - 200px);
+
+      height: 400px;
+      width: 400px;
       border-radius: 10px;
     }
     &.active {
