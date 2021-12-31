@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React, { useEffect, useState } from "react";
 
 import Home from "./pages/home/home.comonent";

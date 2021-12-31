@@ -8,14 +8,17 @@ import rules from "../../assets/images/image-rules.svg";
 
 const RulesModal = ({ active, toggle }) => {
   return (
-    <div className={`rules-modal ${active ? "active" : ""}`}>
-      <h1 className="title">RULES</h1>
-      <div className="diagram">
-        <img src={rules} alt="rules" />
+    <div className={`rules-modal-container ${active ? "active" : ""}`}>
+      <div className={`rules-modal ${active ? "active" : ""}`}>
+        <h1 className="title">RULES</h1>
+
+        <img className="diagram" src={rules} alt="rules" />
+
+        <button type="button" onClick={toggle}>
+          <img src={close} alt="x" />
+        </button>
       </div>
-      <button type="button" onClick={toggle}>
-        <img src={close} alt="x" />
-      </button>
+      <div className="desktop background"></div>
     </div>
   );
 };

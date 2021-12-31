@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  @media (min-width: 800px) {
+    width: 150px;
+    height: 150px;
+  }
   img {
     display: inline;
     margin: 0 auto;

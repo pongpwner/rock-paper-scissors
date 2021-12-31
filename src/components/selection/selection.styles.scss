@@ -1,6 +1,7 @@
 .selection {
   display: flex;
   justify-content: center;
+
   .options {
     background-image: url(../../assets/images/bg-triangle.svg);
     background-repeat: no-repeat;
@@ -11,6 +12,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (min-width: 800px) {
+      background-size: 250px 250px;
+      width: 350px;
+      height: 350px;
+    }
     .row1,
     .row2 {
       display: flex;

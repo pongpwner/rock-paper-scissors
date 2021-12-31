@@ -3,14 +3,18 @@
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  width: 75%;
+
   align-items: center;
   margin: 5% 0;
+  padding: 1rem;
+  gap: 2rem;
+  max-width: 80%;
 
   ul {
     margin: 0;
-    padding: 5%;
+    padding: 0;
     margin-left: 1rem;
+
     li {
       margin: 0;
       padding: 0;
@@ -19,6 +23,13 @@
       font-weight: 700;
       font-size: 1.3rem;
       line-height: 1;
+      @media (min-width: 800px) {
+        font-size: 2rem;
+      }
     }
+  }
+  @media (min-width: 800px) {
+    max-width: 50%;
+    min-width: 40vw;
   }
 }

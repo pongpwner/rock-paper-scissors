@@ -1,7 +1,9 @@
 .battle {
   display: flex;
   justify-content: space-between;
-  width: 75vw;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
   .cpu,
   .player {
     display: flex;

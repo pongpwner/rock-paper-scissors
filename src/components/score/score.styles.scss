@@ -3,15 +3,24 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: 70px;
-  height: 70px;
+  padding: 1rem;
+  min-width: 85px;
+  height: 90%;
   align-items: center;
+
   justify-content: center;
   margin-right: 1rem;
+  @media (min-width: 800px) {
+    width: unset;
+    height: unset;
+  }
   .text {
     color: hsl(229, 64%, 46%);
     font-weight: 600;
     font-size: 0.8rem;
+    @media (min-width: 800px) {
+      font-size: 1rem;
+    }
   }
   .number {
     font-size: 2rem;
