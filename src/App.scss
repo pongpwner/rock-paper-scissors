@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: local("Barlow Semi Condensed"),
+    url(./fonts/BarlowSemiCondensed-Black.ttf) format("opentype");
+}
+
 * {
   box-sizing: border-box;
+  font-family: "Barlow Semi Condensed";
 }
 
 .App {
+  font-family: "Barlow Semi Condensed";
   background: radial-gradient(
     farthest-corner at center 5vh,
     hsla(214, 47%, 23%, 0.85),
@@ -15,6 +23,17 @@
   min-height: 100vh;
   justify-content: space-around;
   gap: 1rem;
+  .attribution {
+    color: white;
+
+    a {
+      color: white;
+    }
+    @media (min-width: 800px) {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 
   @media (min-width: 800px) {
     display: grid;

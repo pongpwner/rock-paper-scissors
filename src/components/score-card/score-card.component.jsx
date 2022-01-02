@@ -5,14 +5,14 @@ import "./score-card.styles.scss";
 
 const ScoreCard = ({ score }) => {
   return (
-    <div className="score-card">
+    <header className="score-card">
       <ul>
-        <li>Rock</li>
-        <li>Paper</li>
-        <li>Scissors</li>
+        <li>ROCK</li>
+        <li>PAPER</li>
+        <li>SCISSORS</li>
       </ul>
       <Score score={score} />
-    </div>
+    </header>
   );
 };
 

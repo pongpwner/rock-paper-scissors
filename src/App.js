@@ -108,7 +108,16 @@ function App() {
         setPlayerChoice={setPlayerChoice}
         setResult={setResult}
       />
+
       <CustomButton name="RULES" handleClick={toggleRulesModal} />
+
+      <footer className="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">Eric Shyu</a>.
+      </footer>
     </div>
   );
 }

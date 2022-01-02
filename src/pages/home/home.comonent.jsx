@@ -19,7 +19,7 @@ const Home = ({
     setResult(null);
   }
   return (
-    <div className="home">
+    <main className="home">
       {playerChoice ? (
         <div className="battle-screen">
           <Battle
@@ -39,7 +39,7 @@ const Home = ({
       ) : (
         <Selection rpsStart={rpsStart} />
       )}
-    </div>
+    </main>
   );
 };
 
