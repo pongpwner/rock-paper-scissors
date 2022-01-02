@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/rock-paper-scissors/static/css/main.fb6f0a12.css",
-    "main.js": "/rock-paper-scissors/static/js/main.1cb14ede.js",
+    "main.css": "/rock-paper-scissors/static/css/main.8af62c50.css",
+    "main.js": "/rock-paper-scissors/static/js/main.6da93abd.js",
     "static/js/787.fdf3b093.chunk.js": "/rock-paper-scissors/static/js/787.fdf3b093.chunk.js",
+    "static/media/BarlowSemiCondensed-Black.ttf": "/rock-paper-scissors/static/media/BarlowSemiCondensed-Black.64f272be2d5cea038136.ttf",
     "static/media/image-rules.svg": "/rock-paper-scissors/static/media/image-rules.258b753fb6284dc8ae00c5b2fa7938c0.svg",
     "static/media/icon-paper.svg": "/rock-paper-scissors/static/media/icon-paper.8b57a6b108c1b8ae82931a39b10f96a2.svg",
     "index.html": "/rock-paper-scissors/index.html",
@@ -10,12 +11,12 @@
     "static/media/icon-rock.svg": "/rock-paper-scissors/static/media/icon-rock.476e90a9646a87bb3645d2f09f4f7fba.svg",
     "static/media/icon-close.svg": "/rock-paper-scissors/static/media/icon-close.bde602ecd1a4e55e0c27137ed651e027.svg",
     "static/media/bg-triangle.svg": "/rock-paper-scissors/static/media/bg-triangle.c0c30b562fdb087666594c1bc0d512f6.svg",
-    "main.fb6f0a12.css.map": "/rock-paper-scissors/static/css/main.fb6f0a12.css.map",
-    "main.1cb14ede.js.map": "/rock-paper-scissors/static/js/main.1cb14ede.js.map",
+    "main.8af62c50.css.map": "/rock-paper-scissors/static/css/main.8af62c50.css.map",
+    "main.6da93abd.js.map": "/rock-paper-scissors/static/js/main.6da93abd.js.map",
     "787.fdf3b093.chunk.js.map": "/rock-paper-scissors/static/js/787.fdf3b093.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb6f0a12.css",
-    "static/js/main.1cb14ede.js"
+    "static/css/main.8af62c50.css",
+    "static/js/main.6da93abd.js"
   ]
 }
