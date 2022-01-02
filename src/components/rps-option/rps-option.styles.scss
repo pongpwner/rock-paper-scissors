@@ -9,9 +9,11 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  box-shadow: inset 0px 4px 0px lightgray;
   @media (min-width: 800px) {
     width: 150px;
     height: 150px;
+    box-shadow: inset 0px 6px 0px lightgray;
   }
   img {
     display: inline;
@@ -21,13 +23,26 @@
   }
 }
 .paper {
-  border: 15px solid hsl(230, 89%, 62%);
+  border: 15px solid hsl(230, 89%, 65%);
+
+  filter: drop-shadow(0 4px 0px hsl(230, 89%, 62%));
+  @media (min-width: 1200px) {
+    filter: drop-shadow(0 7px 0px hsl(230, 89%, 62%));
+  }
 }
 .scissors {
-  border: 15px solid hsl(39, 89%, 49%);
+  border: 15px solid hsl(40, 84%, 53%);
+  filter: drop-shadow(0 4px 0px hsl(39, 89%, 49%));
+  @media (min-width: 1200px) {
+    filter: drop-shadow(0 7px 0px hsl(39, 89%, 49%));
+  }
 }
 .rock {
-  border: 15px solid hsl(349, 71%, 52%);
+  border: 15px solid hsl(349, 70%, 56%);
+  filter: drop-shadow(0 4px 0px hsl(349, 71%, 52%));
+  @media (min-width: 1200px) {
+    filter: drop-shadow(0 7px 0px hsl(349, 71%, 52%));
+  }
 }
 .paper,
 .rock,
