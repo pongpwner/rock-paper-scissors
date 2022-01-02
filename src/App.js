@@ -11,7 +11,17 @@ function App() {
   const [playerChoice, setPlayerChoice] = useState(null);
   const [cpuChoice, setCpuChoice] = useState(null);
   const [result, setResult] = useState(null);
-  const [score, setScore] = useState(0);
+  //const [score, setScore] = useState(0);
+  const [score, setScore] = useState(() => {
+    const savedScore = localStorage.getItem("score");
+    const initialScoreValue = JSON.parse(savedScore);
+    return initialScoreValue || 0;
+  });
+
+  useEffect(() => {
+    // storing score
+    localStorage.setItem("score", JSON.stringify(score));
+  }, [score]);
 
   //helper functions
   function generateRandomIntegerInRange(min, max) {
