@@ -22,7 +22,11 @@ const Home = ({
     <div className="home">
       {playerChoice ? (
         <div className="battle-screen">
-          <Battle playerChoice={playerChoice} cpuChoice={cpuChoice} />
+          <Battle
+            playerChoice={playerChoice}
+            cpuChoice={cpuChoice}
+            result={result}
+          />
           {result ? (
             <div className="result">
               <div className="result-label">YOU {result.toUpperCase()}</div>

@@ -1,53 +1,94 @@
-.image-cropper {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
+.rps-option {
   border-radius: 50%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  box-shadow: inset 0px 4px 0px lightgray;
-  @media (min-width: 800px) {
-    width: 150px;
-    height: 150px;
-    box-shadow: inset 0px 6px 0px lightgray;
+  &.player.win {
+    box-shadow: 0 0 0 40px hsla(223, 100%, 94%, 0.3),
+      0 0 0 80px hsla(223, 100%, 94%, 0.2),
+      0 0 0 120px hsla(223, 100%, 94%, 0.1);
+    @media (min-width: 800px) {
+      box-shadow: 0 0 0 60px hsla(223, 100%, 94%, 0.3),
+        0 0 0 120px hsla(223, 100%, 94%, 0.2),
+        0 0 0 180px hsla(223, 100%, 94%, 0.1);
+    }
   }
-  img {
-    display: inline;
-    margin: 0 auto;
-    height: 50%;
-    width: auto;
+  &.cpu.lose {
+    box-shadow: 0 0 0 40px hsla(223, 100%, 94%, 0.3),
+      0 0 0 80px hsla(223, 100%, 94%, 0.2),
+      0 0 0 120px hsla(223, 100%, 94%, 0.1);
+    @media (min-width: 800px) {
+      box-shadow: 0 0 0 60px hsla(223, 100%, 94%, 0.3),
+        0 0 0 120px hsla(223, 100%, 94%, 0.2),
+        0 0 0 180px hsla(223, 100%, 94%, 0.1);
+    }
   }
-}
-.paper {
-  border: 15px solid hsl(230, 89%, 65%);
 
-  filter: drop-shadow(0 4px 0px hsl(230, 89%, 62%));
-  @media (min-width: 1200px) {
-    filter: drop-shadow(0 7px 0px hsl(230, 89%, 62%));
+  .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: inset 0px 4px 0px lightgray;
+    @media (min-width: 800px) {
+      width: 150px;
+      height: 150px;
+      box-shadow: inset 0px 6px 0px lightgray;
+    }
+    @media (min-width: 1200px) {
+      width: 150px;
+      height: 150px;
+      box-shadow: inset 0px 8px 0px lightgray;
+    }
+    img {
+      display: inline;
+      margin: 0 auto;
+      height: 50%;
+      width: auto;
+    }
   }
-}
-.scissors {
-  border: 15px solid hsl(40, 84%, 53%);
-  filter: drop-shadow(0 4px 0px hsl(39, 89%, 49%));
-  @media (min-width: 1200px) {
-    filter: drop-shadow(0 7px 0px hsl(39, 89%, 49%));
+  .paper {
+    border: 15px solid hsl(230, 89%, 65%);
+
+    filter: drop-shadow(0 4px 0px hsl(230, 89%, 62%));
+    &:after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      background: red;
+      z-index: -1;
+    }
+    @media (min-width: 1200px) {
+      filter: drop-shadow(0 7px 0px hsl(230, 89%, 62%));
+    }
   }
-}
-.rock {
-  border: 15px solid hsl(349, 70%, 56%);
-  filter: drop-shadow(0 4px 0px hsl(349, 71%, 52%));
-  @media (min-width: 1200px) {
-    filter: drop-shadow(0 7px 0px hsl(349, 71%, 52%));
+  .scissors {
+    border: 15px solid hsl(40, 84%, 53%);
+    filter: drop-shadow(0 4px 0px hsl(39, 89%, 49%));
+    @media (min-width: 1200px) {
+      filter: drop-shadow(0 7px 0px hsl(39, 89%, 49%));
+    }
   }
-}
-.paper,
-.rock,
-.scissors {
-  @media (min-width: 1200px) {
-    border-width: 25px;
+  .rock {
+    border: 15px solid hsl(349, 70%, 56%);
+    //filter: drop-shadow(0 4px 0px hsl(349, 71%, 52%));
+    @media (min-width: 1200px) {
+      //  filter: drop-shadow(0 7px 0px hsl(349, 71%, 52%));
+    }
+  }
+  .paper,
+  .rock,
+  .scissors {
+    @media (min-width: 800px) {
+      border-width: 20px;
+    }
+    @media (min-width: 1200px) {
+      border-width: 22px;
+    }
   }
 }

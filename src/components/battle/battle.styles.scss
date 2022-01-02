@@ -8,6 +8,7 @@
   @media (min-width: 800px) {
     width: 69%;
   }
+
   .cpu,
   .player {
     display: flex;
@@ -45,8 +46,8 @@
 
   .cpu {
     .empty {
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       position: relative;
       overflow: hidden;
       border-radius: 50%;
@@ -56,12 +57,12 @@
       align-items: center;
       background-color: hsl(237, 49%, 15%);
       @media (min-width: 800px) {
-        order: 2;
+        order: 1;
         width: 150px;
         height: 150px;
       }
       @media (min-width: 1200px) {
-        order: 2;
+        order: 1;
         width: 250px;
         height: 250px;
       }

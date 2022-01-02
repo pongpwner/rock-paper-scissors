@@ -5,18 +5,29 @@ import paper from "../../assets/images/icon-paper.svg";
 import scissors from "../../assets/images/icon-scissors.svg";
 import RpsOption from "../rps-option/rps-option.component";
 
-const Battle = ({ playerChoice, cpuChoice }) => {
+const Battle = ({ playerChoice, cpuChoice, result }) => {
   let playerChoiceImage;
   switch (playerChoice) {
     case "rock":
-      playerChoiceImage = <RpsOption name={playerChoice} image={rock} />;
+      playerChoiceImage = (
+        <RpsOption name={playerChoice} image={rock} result={result} player />
+      );
       break;
     case "paper":
-      playerChoiceImage = <RpsOption name={playerChoice} image={paper} />;
+      playerChoiceImage = (
+        <RpsOption name={playerChoice} image={paper} result={result} player />
+      );
       break;
 
     case "scissors":
-      playerChoiceImage = <RpsOption name={playerChoice} image={scissors} />;
+      playerChoiceImage = (
+        <RpsOption
+          name={playerChoice}
+          image={scissors}
+          result={result}
+          player
+        />
+      );
       break;
 
     default:
@@ -26,14 +37,20 @@ const Battle = ({ playerChoice, cpuChoice }) => {
   let cpuChoiceImage;
   switch (cpuChoice) {
     case "rock":
-      cpuChoiceImage = <RpsOption name={cpuChoice} image={rock} />;
+      cpuChoiceImage = (
+        <RpsOption name={cpuChoice} image={rock} result={result} cpu />
+      );
       break;
     case "paper":
-      cpuChoiceImage = <RpsOption name={cpuChoice} image={paper} />;
+      cpuChoiceImage = (
+        <RpsOption name={cpuChoice} image={paper} result={result} cpu />
+      );
       break;
 
     case "scissors":
-      cpuChoiceImage = <RpsOption name={cpuChoice} image={scissors} />;
+      cpuChoiceImage = (
+        <RpsOption name={cpuChoice} image={scissors} result={result} cpu />
+      );
       break;
 
     default:
